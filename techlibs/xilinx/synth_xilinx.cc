@@ -433,10 +433,10 @@ struct SynthXilinxPass : public ScriptPass
 				run("opt_expr -fine");
 				run("wreduce");
 				run("select -clear");
-				if (help_mode)
-					run("xilinx_dsp -family <family>");
-				else
-					run("xilinx_dsp -family " + family);
+			//	if (help_mode)
+			//		run("xilinx_dsp -family <family>");
+			//	else
+			//		run("xilinx_dsp -family " + family);
 				run("chtype -set $mul t:$__soft_mul");
 			}
 		}
